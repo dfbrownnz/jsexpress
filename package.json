@@ -1,7 +1,7 @@
 {
-  "name": "basic",
+ "name": "jsexpress",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic Express server",
   "main": "basic.js",
   "type": "module",
   "scripts": {

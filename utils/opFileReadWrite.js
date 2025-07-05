@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const filePathData = path.join(__dirname, 'data.json');
+const filePathData = path.join(__dirname, '../data/data.json');
 // export interface Rcd {
 //   name: string;
 //   action: string;
