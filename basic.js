@@ -70,7 +70,6 @@ app.get('/rcd', (req, res) => {
 app.post('/rcd', (req, res) => {
   console.log(`Request received for ${req.url} with body: ${JSON.stringify(req.body)}`);
   fileAddRcd(req.body);
-  // Here you would typically handle the request body
   // For example, you could save it to a database or perform some action
   res.json({ message: 'Record added successfully', data: req.body });
 })
