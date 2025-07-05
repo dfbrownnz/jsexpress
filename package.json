@@ -1,0 +1,25 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basic.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_idk": "ts-node src/index.ts",
+    "startz": "ts-node basic.js",
+    "start": "node basic.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type_notused": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+ 
+}
