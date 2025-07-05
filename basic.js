@@ -1,16 +1,22 @@
 //const express = require('express')
 import express from 'express';
 const app = express()
-const port = 3000
+const port = 8080
 
 // Lists files and folders in the specified directory
 // const fs = require('fs');
 // const path = require('path');
-import fs from 'fs'
 import path from 'path';
+import { fileURLToPath } from 'url';
+
 //const directoryPath = path.join(__dirname, 'public'); // Change 'public' to your directory
 //const directoryPath = path.join(__dirname, 'public'); // Change 'public' to your directory
-const directoryPathDownload ='C:/Users/dfbro/Downloads/'
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+//const filePathData = path.join(__dirname, 'data.json');
+
+const directoryPathDownload = __dirname + '/data/' // 'C:/Users/dfbro/Downloads/'
 import { listFilesAndFolders } from './utils/opFiles.js';
 import { fileAddRcd, fileReadRcd } from './utils/opFileReadWrite.js';
 let rcd = { "name": "test", "action": "idk"  };
