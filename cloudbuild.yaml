@@ -1,7 +1,7 @@
 steps:
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/jsexpress:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/jsexpress:$_IMAGE_TAG', '.']
 
   # Push the Docker image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
@@ -13,3 +13,7 @@ images:
 
 options:
   logging: CLOUD_LOGGING_ONLY
+
+# Define a fallback default value here
+substitutions:
+  _IMAGE_TAG: 'latest'
