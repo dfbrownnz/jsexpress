@@ -8,7 +8,8 @@ steps:
     args: ['push', 'gcr.io/$PROJECT_ID/jsexpress:$COMMIT_SHA']
 
 images:
-  - 'gcr.io/$PROJECT_ID/jsexpress:$COMMIT_SHA'
+  # - 'gcr.io/$PROJECT_ID/jsexpress:$COMMIT_SHA'
+  - 'gcr.io/$PROJECT_ID/jsexpress:latest'
 
 options:
   logging: CLOUD_LOGGING_ONLY
